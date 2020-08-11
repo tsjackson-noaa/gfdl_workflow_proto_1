@@ -1,0 +1,28 @@
+# Conda environment for development work. 
+name: workflow_graph
+channels:
+- conda-forge
+- defaults
+dependencies:
+# base
+- python=3.7
+- pylint
+- doc8
+- jupyter
+- jupyterlab
+# data munging
+- netCDF4
+- numpy
+- xarray
+- dask
+- pint
+- metpy
+- xesmf
+# data handling
+- sqlalchemy
+- intake
+- intake-esm
+- intake-sql
+# pegasus dag visualization
+- networkx
+- pygraphviz
