@@ -1,5 +1,5 @@
 # Conda environment for development work. 
-name: workflow_graph
+name: gfdl_workflow_proto_1
 channels:
 - conda-forge
 - defaults
@@ -14,7 +14,6 @@ dependencies:
 - netCDF4
 - numpy
 - xarray
-- dask
 - pint
 - metpy
 - xesmf
@@ -23,6 +22,8 @@ dependencies:
 - intake
 - intake-esm
 - intake-sql
-# pegasus dag visualization
-- networkx
-- pygraphviz
+# workflow
+- dask
+- dask-jobqueue
+- dagster
+- graphviz
